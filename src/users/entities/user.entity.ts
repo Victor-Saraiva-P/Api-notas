@@ -16,6 +16,6 @@ export class User {
   @Exclude()
   password: string;
 
-  @Column()
+  @Column({ default: 'user' })
   role: 'user' | 'admin';
 }
