@@ -15,7 +15,8 @@ import { AuthModule } from './auth/auth.module';
       synchronize: true, // Apenas para desenvolvimento
     }),
     UsersModule, // Módulo de usuários
-    ConfigModule.forRoot(), AuthModule, // Módulo de configuração
+    ConfigModule.forRoot(),
+    AuthModule, // Módulo de configuração
   ],
   controllers: [AppController],
   providers: [AppService],
